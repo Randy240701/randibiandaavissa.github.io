@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body class="flex flex-col min-h-full">
+    <nav class="flex flex-row items-center justify-between p-5 bg-gray-900">
+        <span class="text-white font-bold text-2xl md:text-4xl"><a href="/">RANDY</a></span>
+        <ul class="flex flex-row text-white font-thin md:font-normal text-sm md:text-lg">
+            <li class="mx-2 p-2 rounded transition duration-500 ease-in-out hover:bg-indigo-700"><a
+                    href="#about">About</a></li>
+            <li class="mx-2 p-2 rounded transition duration-500 ease-in-out hover:bg-indigo-700"><a
+                    href="#skill">Skill</a></li>
+            <li class="mx-2 p-2 rounded transition duration-500 ease-in-out hover:bg-indigo-700"><a
+                    href="#project">Project</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="jumbotron flex flex-col items-center justify-center h-screen bg-center bg-cover bg-no-repeat">
+            <h1 class="text-white text-3xl md:text-4xl lg:text-6xl font-normal">RANDY JULIAN</h1>
+            <p class="text-white text-2xl md:text-5xl font-thin">Welcome To My Portfolio</p>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="flex flex-col items-center justify-center px-5 py-8">
+                <h2 class="text-4xl font-medium my-4">About</h2>
+                <div class="profile-picture my-4 rounded-full h-48 md:h-56 w-48 md:w-56 bg-center bg-cover bg-no-repeat"></div>
+                <p class="text-xl font-thin text-center my-4 w-3/4 md:w-2/4">Halo, Saya biasa dipanggil randy. lahir di tasikmalaya 24 juli 2001, dan sekarang saya menenap di kota bandung.</p>
+            </div>
+        </section>
+        <section id="skill">
+            <div class="flex flex-col items-center justify-center mx-auto px-5 bg-gray-200">
+                <h2 class="text-4xl font-medium my-4">Skill</h2>
+                <p class="text-xl font-thin text-center my-4 w-3/4">Berikut ini adalah teknologi yang biasa saya gunakan.</p>
+                <div class="grid gap-20 md:gap-24 grid-cols-2 md:grid-cols-4 gap-24 my-8">
+                    <span class="h-32 md:h-48 w-30 md:w-48 rounded-md">
+                        <img src="./assets/html.png" alt="html 5">
+                    </span>
+                    <span class="h-32 md:h-48 w-30 md:w-48 rounded-md">
+                        <img src="./assets/csss.svg" alt="css 3">
+                    </span>
+                    <span class="h-32 md:h-48 w-30 md:w-48 rounded-md">
+                        <img src="./assets/java2.png" alt="Javascript">
+                    </span>
+                    <span class="h-32 md:h-48 w-30 md:w-48 rounded-md">
+                        <img src="./assets/tailwind.png" alt="Tailwind">
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <div class="flex flex-col items-center justify-center mx-auto px-5 py-8">
+                <h2 class="text-4xl font-medium my-4">Project</h2>
+                <p class="text-center text-xl font-light my-2 w-3/4">You can click the image to go to the site!
+                </p>
+                <p class="text-center text-xl font-thin my-2 w-3/4">(more coming soon)</p>
+                <div class="grid gap-8 grid-cols-1 my-8">
+                    <div class="grid gap-16 grid-cols-1 md:grid-cols-2 mx-12 my-4">
+                        <a href="mthesportsid.rf.gd">
+                            <img class="transform hover:scale-110 transition duration-500 ease-in-out"
+                                src="./assets/mth1.png" alt="mthesportsid">
+                        </a>
+                        <div>
+                            <h3 class="text-left text-2xl font-medium">MTH Esports ID</h3>
+                            <p class="text-left text-lg font-thin">Website company profile yang memperkenalkan sebuah team esports indonesia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid gap-8 grid-cols-1 my-8">
+                        <div class="grid gap-16 grid-cols-1 md:grid-cols-2 mx-12 my-4">
+                            <a href="">
+                                <img class="transform hover:scale-110 transition duration-500 ease-in-out"
+                                    src="./assets/portolio1.png" alt="portfolio">
+                            </a>
+                            <div>
+                                <h3 class="text-left text-2xl font-medium">My Portfolio</h3>
+                                <p class="text-left text-lg font-thin">Sebuah Portfolio yang dibuat menggunakan wordpress.</p>
+                            </div>
+                        </div>
+                        <div class="grid gap-8 grid-cols-1 my-8">
+                            <div class="grid gap-16 grid-cols-1 md:grid-cols-2 mx-12 my-4">
+                                <a href="">
+                                    <img class="transform hover:scale-110 transition duration-500 ease-in-out"
+                                        src="./assets/slayer1.png" alt="slayermart">
+                                </a>
+                                <div>
+                                    <h3 class="text-left text-2xl font-medium">SlayerMart</h3>
+                                    <p class="text-left text-lg font-thin">Website e-commerce yang menjual produk produk berkualitas dengan harga yang murah.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-white text-center font-thin p-1 mt-auto">© 2021 Randy Julian</footer>
+</body>
+
+</html>
